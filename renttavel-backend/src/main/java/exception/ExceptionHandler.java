@@ -40,7 +40,7 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
      */
     @Override
     public Response toResponse(Exception exception) {
-        Map<String, String> mapAtributos = new HashMap<String, String>();
+        Map<String, String> mapAtributos = new HashMap<>();
         mapAtributos.put("mensagem", exception.getMessage());
 
         //Fonte: https://www.baeldung.com/java-stacktrace-to-string
